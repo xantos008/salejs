@@ -3488,11 +3488,11 @@ jQuery.support = (function( support ) {
 		// hidden; don safety goggles and see bug #4512 for more information).
 		div.innerHTML = "<table><tr><td></td><td>t</td></tr></table>";
 		tds = div.getElementsByTagName("td");
-		tds[ 0 ].style.cssText = "padding:0;margin:0;border:0;display:none";
+		tds[ 0 ].style.cssText = "padding:0;margin:0;border:0;";
 		isSupported = ( tds[ 0 ].offsetHeight === 0 );
 
 		tds[ 0 ].style.display = "";
-		tds[ 1 ].style.display = "none";
+		tds[ 1 ].style.display = "";
 
 		// Support: IE8
 		// Check if empty table cells still have offsetWidth/Height
